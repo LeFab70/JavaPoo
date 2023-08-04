@@ -43,10 +43,10 @@ public class Main {
         }
         System.out.println("============================");
         Map<String,BankAccount> bankAccountMap=new HashMap<>();
-        bankAccountMap.put("cc1",new BankAccount());
-        bankAccountMap.put("cc2",new BankAccount());
-        bankAccountMap.put("cc3",new BankAccount());
-        bankAccountMap.put("cc4",new BankAccount());
+        bankAccountMap.put("cc1",new BankAccount("cfa",400));
+        bankAccountMap.put("cc2",new BankAccount("$",600));
+        bankAccountMap.put("cc3",new BankAccount("eur",650));
+        bankAccountMap.put("cc4",new BankAccount("Dar",200));
         for (String key:bankAccountMap.keySet()){
             System.out.println(toJson(bankAccountMap.get(key)));
         }
